@@ -1,0 +1,17 @@
+<h2>新しい行</h2>
+<%=form_for(@disease) do |f| %>
+  <p>
+    <%= f.label :name, "名称" %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :description, "説明" %><br />
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.label :icd, "ＩＣＤ" %><br />
+    <%= f.text_field :icd %>
+  <%= f.submit "作成" %>
+<% end %>
